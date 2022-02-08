@@ -1,0 +1,13 @@
+.main_{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 51%, rgba(0,212,255,1) 100%);
+
+}
+table{
+    table-layout:fixed;
+    width: 100%;
+}
+ td{
+     word-wrap:break-word;
+     word-break:break-all;
+ }
