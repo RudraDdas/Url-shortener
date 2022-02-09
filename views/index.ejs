@@ -17,7 +17,7 @@
     <h1 class="text-center text-white">Url Shortner :-</h1>
     <form class="d-grid" method="POST" action="/short">
       <div class="form-floating mb-3">
-        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="full_url">
         <label for="floatingInput">URL</label>
       </div>
       <button type="button" class="btn btn-dark m-auto w-25 justify-content-center">GO</button>
@@ -34,17 +34,17 @@
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-      <td>qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</td>
-      <td>Otto</td>
-     
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob Lorem ips amet, vel ullam, laborios?</td>
-        <td>Thorntonqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq</td>
-      </tr>
+      <% allurls.map((item)=>{
+        %>  
+        
+        <tr>
+          <th scope="row">1</th>
+        <td><a href="<%= item.main %>"></a></td>
+        <td><a href="<%= item.short %>"></a></td>
+       
+        </tr>
+        
+        <%}) %> 
     </tbody>
     </table>
    
